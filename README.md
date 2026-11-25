@@ -2,9 +2,9 @@
 
 ![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![Midtrans](https://img.shields.io/badge/Midtrans_Payment_Gateway-001A36?style=for-the-badge)
 
-Repositori ini berisi *source code* untuk proyek Ujian Akhir Semester (UAS) mata kuliah Pemrograman Web (Semester 4), Program Studi Rekayasa Perangkat Lunak (Software Engineering), Universitas Pendidikan Indonesia (UPI) Kampus Cibiru.
+Repositori ini berisi *source code* untuk proyek Ujian Akhir Semester (UAS) mata kuliah **Probabilitas dan Statistika (Semester 5)**, Program Studi Rekayasa Perangkat Lunak (Software Engineering), Universitas Pendidikan Indonesia (UPI) Kampus Cibiru.
 
-Proyek ini adalah platform pemesanan *end-to-end* untuk **Al-Fazza Bakery**, sebuah toko roti dan kue modern. Terdiri dari halaman *Customer-facing* yang sangat interaktif dan responsif, serta *Content Management System* (Dashboard Admin) yang komprehensif untuk mengelola operasional bisnis mulai dari penjualan hingga pesanan kustom.
+Proyek ini adalah platform pemesanan *end-to-end* sekaligus sistem analitik pengambilan keputusan berbasis data (*Decision Support & Statistical Analytics*) untuk UMKM **Al-Fazza Bakery**, sebuah toko roti dan kue modern. Terdiri dari halaman *Customer-facing* yang interaktif dan responsif, serta *Dashboard Admin* yang menerapkan metode **Probabilitas dan Statistika** dalam menganalisis penjualan, distribusi permintaan produk, dan manajemen stok operasional UMKM.
 
 ---
 
@@ -44,8 +44,8 @@ Pastikan Anda sudah menginstal aplikasi berikut di komputer Anda:
 1. **Clone Repositori**
    Buka terminal/CMD dan jalankan perintah:
    ```bash
-   git clone https://github.com/Zsxam/al-fazza-uas.git
-   cd al-fazza-uas
+   git clone https://github.com/Zsxam/probstat-al-fazza.git
+   cd probstat-al-fazza
    ```
 
 2. **Install Dependensi PHP & NPM**
@@ -69,11 +69,11 @@ Pastikan Anda sudah menginstal aplikasi berikut di komputer Anda:
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
-   DB_DATABASE=alfazza_db
+   DB_DATABASE=alfazza_probstat
    DB_USERNAME=root
    DB_PASSWORD=
    ```
-   *(Pastikan Anda telah membuat database kosong bernama `alfazza_db` di phpMyAdmin)*
+   *(Pastikan Anda telah membuat database kosong bernama `alfazza_probstat` di phpMyAdmin)*
 
 5. **Konfigurasi API Keys & Email Server (Penting!)**
    Di dalam file `.env`, pastikan Anda memasukkan *Client Key* dan *Server Key* Midtrans Sandbox Anda, beserta konfigurasi SMTP Email (contoh menggunakan Gmail) untuk pengiriman tagihan:
@@ -125,4 +125,4 @@ Aplikasi sekarang dapat diakses melalui browser di alamat: `http://127.0.0.1:800
 Untuk masuk ke **Dashboard Admin**, Anda bisa cari mandiri di *Seeder*
 
 ---
-*Dibuat dengan ❤️ oleh PancongMan untuk Ujian Akhir Semester Pemrograman Web RPL UPI.*
+*Dibuat dengan ❤️ oleh PancongMan untuk Ujian Akhir Semester Probabilitas dan Statistika RPL UPI.*
