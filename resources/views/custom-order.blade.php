@@ -222,8 +222,8 @@
                 <div class="bg-primary-brown text-white p-4">
                     <h3 class="m-0 text-lg font-bold">Catatan Tambahan</h3>
                 </div>
-                <textarea id="co_catatan" rows="3" maxlength="250" oninput="updateCounter('co_catatan', 'counter_catatan', 250)" placeholder="Contoh: Krim jangan terlalu manis, dll." class="w-full p-2.5 rounded-lg font-inherit outline-none focus:border-primary-brown"></textarea>
-                <div id="counter_catatan" class="text-right text-xs text-gray-500 mt-1">0/250</div>
+                <textarea id="co_catatan" rows="3" maxlength="250" oninput="updateCharCount('co_catatan', 250)" placeholder="Contoh: Krim jangan terlalu manis, dll." class="w-full p-2.5 rounded-lg font-inherit outline-none focus:border-primary-brown"></textarea>
+                <div class="text-right text-xs text-gray-500 mt-1 px-2.5 pb-2"><span id="co_catatan-count">0</span>/250 karakter</div>
             </div>
 
             <button type="button" onclick="prosesCustomOrderMidtrans()" class="w-full bg-btn-navy text-white p-4 border-none rounded-lg text-lg font-bold cursor-pointer transition-colors duration-300 hover:bg-btn-navy-hover flex justify-center items-center gap-2.5 shadow-[0_4px_6px_rgba(0,0,0,0.1)] mt-5">

@@ -38,7 +38,7 @@
             <div class="items-list">
                 @foreach($transaksi->details as $detail)
                 <div class="mb-2.5">
-                    <div>{{ $detail->product->nama }}</div>
+                    <div>{{ $detail->product->nama ?? 'Produk Dihapus' }}</div>
                     <div class="flex justify-between">
                         <span>{{ $detail->qty }} x {{ number_format($detail->price, 0, ',', '.') }}</span>
                         <span>{{ number_format($detail->subtotal, 0, ',', '.') }}</span>

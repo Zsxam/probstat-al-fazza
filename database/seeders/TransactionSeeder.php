@@ -46,7 +46,7 @@ class TransactionSeeder extends Seeder
                 'delivery_date' => Carbon::now()->addDays(1)->format('Y-m-d'),
                 'notes' => 'Tolong dikirim agak sore.',
                 'order_type' => 'online',
-                'total_amount' => 250000,
+                'total_amount' => 240500,
                 'payment_status' => 'success',
                 'order_status' => 'dikirim',
                 'custom_details' => null,
@@ -103,7 +103,7 @@ class TransactionSeeder extends Seeder
                 'product_id' => 1, 
                 'qty' => 9,
                 'price' => 13500,
-                'subtotal' => 131000, // Total keranjang INV-002 = 250.000
+                'subtotal' => 121500, // 9 x 13.500 = 121.500 (Total keranjang INV-002 = 119.000 + 121.500 = 240.500)
                 'created_at' => Carbon::now()->subDays(1),
                 'updated_at' => Carbon::now()->subDays(1),
             ],

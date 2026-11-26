@@ -20,7 +20,7 @@ class CustomCheckoutRequest extends FormRequest
             'customer_phone' => 'required|string|max:15',
             'delivery_date' => 'required|date',
             // Alamat maksimal 300 karakter
-            'delivery_address' => 'nullable|string|max:100',
+            'delivery_address' => 'nullable|string|max:300',
             // Karena detail kue digabung semua, kita beri batas aman maksimal 300 karakter
             'custom_details' => 'required|string|max:300',
             // Catatan maksimal 250 karakter

@@ -246,7 +246,7 @@ function updateCartUI() {
             return `
                 <div class="flex items-center mb-4 relative border-b border-border-light border-dashed pb-4">
                     
-                    <a href="/produk/${item.id}" class="flex items-center gap-4 w-[60%] no-underline text-inherit">
+                    <a href="/detail/${item.id}" class="flex items-center gap-4 w-[60%] no-underline text-inherit">
                         <img src="${item.image}" alt="${item.name}" class="w-15 h-15 object-cover rounded-lg">
                         <div>
                             <h4 class="m-0 text-base">${item.name}</h4>
@@ -487,8 +487,8 @@ function prosesCustomOrderMidtrans() {
         Swal.fire({ icon: 'warning', text: 'Mohon isi detail alamat pengiriman!' });
         document.getElementById('co_alamat').focus();
         return; 
-    } else if (alamat.length > 100) { // <-- Ini kode tambahannya
-        Swal.fire({ icon: 'warning', text: 'alamat maksimal 100 karakter!' });
+    } else if (alamat.length > 300) {
+        Swal.fire({ icon: 'warning', text: 'Detail alamat maksimal 300 karakter!' });
         document.getElementById('co_alamat').focus();
         return; 
     }

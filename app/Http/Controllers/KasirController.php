@@ -79,13 +79,17 @@ class KasirController extends Controller
 
     public function selesai($id)
     {
-        $transaksi = Transaction::with('details.product')->findOrFail($id);
+        $transaksi = Transaction::with(['details.product' => function ($q) {
+            $q->withTrashed();
+        }])->findOrFail($id);
         return view('kasir.selesai', compact('transaksi'));
     }
 
     public function cetakStruk($id)
     {
-        $transaksi = Transaction::with('details.product')->findOrFail($id);
+        $transaksi = Transaction::with(['details.product' => function ($q) {
+            $q->withTrashed();
+        }])->findOrFail($id);
         
         // Menghitung tinggi kertas secara dinamis berdasarkan jumlah produk
         $baseHeight = 270;

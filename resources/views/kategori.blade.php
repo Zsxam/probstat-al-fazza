@@ -35,7 +35,7 @@
                     <div class="flex flex-col justify-between items-start px-3 md:px-8 pb-3 md:pb-5 mt-auto gap-2">
                         <p class="text-sm md:text-xl font-bold mb-0">Rp {{ number_format($p->harga, 0, ',', '.') }}</p>
                         <div class="flex flex-row gap-1.5 md:gap-2.5 w-full md:w-auto">
-                            <button class="flex-1 md:flex-none bg-secondary text-white border-none py-1.5 md:py-2.5 px-0 md:px-5 rounded font-bold cursor-pointer hover:bg-dark-brown text-xs md:text-base" onclick="addToCart('{{ $p->id }}', '{{ $p->nama }}', {{ $p->harga }}, '{{ asset($p->gambar) }}')">Beli</button>
+                            <button class="flex-1 md:flex-none bg-secondary text-white border-none py-1.5 md:py-2.5 px-0 md:px-5 rounded font-bold cursor-pointer hover:bg-dark-brown text-xs md:text-base" onclick="addToCart('{{ $p->id }}', '{{ $p->nama }}', {{ $p->harga }}, '{{ asset($p->gambar) }}', 1, {{ $p->stok }})">Beli</button>
                             <a href="{{ url('/detail/' . $p->id) }}" class="flex-1 md:flex-none bg-primary-brown text-white border-none py-1.5 md:py-2.5 px-0 md:px-5 rounded font-bold cursor-pointer no-underline block text-center hover:bg-dark-brown text-xs md:text-base">Detail</a>
                         </div>
                     </div>
@@ -44,8 +44,4 @@
             </div>
         </div>
     </main>
-    
-    <script>
-        document.addEventListener("DOMContentLoaded", renderKategoriProduk);
-    </script>
-    @endsection
+@endsection
